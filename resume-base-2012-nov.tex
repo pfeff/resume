@@ -1,60 +1,59 @@
 % rubber path /home/matt/Downloads/moderncv
-\documentclass{moderncv}
-\moderncvstyle{casual}
+\documentclass[12pt,letter,sans]{moderncv}
+\moderncvstyle{custom}
+\moderncvcolor{black}
+\nopagenumbers
+
+\usepackage[scale=0.85]{geometry}
+
 \firstname{Matthew}
 \familyname{Pfefferle}
 \address{4606 Bridle Path Ln}{Dublin, Ohio 43017}
 \mobile{+1(614)464-7146}
 \email{matthew.pfefferle@gmail.com}
+
 \begin{document}
 \makecvtitle
 
-\section{Summary}
+\section{Summary of Qualifications}
 
-I am a software engineer with a proven track record in mobile, cloud, and
-enterprise application development. As a manager and as a contributor I have
-had many successful software product releases in areas serving large
-telecommunication service providers. My ability to adapt to changing business
-and technical environments has allowed me to deliver high quality software
-products given shifting requirements and tight deadlines and resources.
+Principal designer of the original Pulse Mobile Security Gateway with intimate
+knowledge of its internals, capabilities, and limitations.  Experience
+customizing the MSG and designing/documenting APIs for large carrier customers.
+Supervised internal and outsourced teams developing MSS and MSG functionality.
 
-\subsection{Specialties}
+\subsection{Technical Expertise}
 
-Software Engineering, Smart Phones, Internet and Web Technology, Open Source, Linux, Java
-
-\subsection{Programming Languages}
-
-Java, Ruby, Python, C\#
+\begin{description}
+    \item[Web Services] SOAP, WSDL, REST, SAML/SSO
+    \item[Programming Languages] Java, JSP, Ruby, PHP, Python, Bash, JavaScript, XML
+    \item[Frameworks] Spring, Hibernate, Rails
+    \item[Server Platforms] Linux (RedHat, CentOS, Ubuntu), JBoss 5, JBoss AS 7, Jenkins
+    \item[Mobile Platforms] SymbianOS
+    \item[Operations] Continuous Deployment, Jenkins, Capistrano
+    \item[Development Methodologies] Scrum, NPI, CDM
+\end{description}
 
 \section{Experience}
 
 \cventry{July 2011 -- Present}{Software Engineer 4}{Juniper Networks}{}{}{}
 
-As a software engineer at Juniper, I was responsible for feature development,
-bug fixes, and project automation on the Junos Pulse Mobile Security Gateway.
-The product is a cloud-based, multi-tenant, enterprise management server
-responsible for managing security and usage policies on major smartphone
-platforms including iOS, Android, BlackBerry, Symbian, and Windows Mobile.
-
-My contributions in this role following integration of legacy SMobile technology
-included:
+Responsible for feature development, bug fixes, and project automation on the
+Junos Pulse Mobile Security Gateway.  The cloud-based, multi-tenant, enterprise
+management server manages security and usage policies on major
+smartphone platforms including iOS, Android, BlackBerry, Symbian, and Windows
+Mobile.
 
 \begin{itemize}
 
-    \item A project automation system to implement continuous deployment.
-        Based on the open source Jenkins continuous integration platform and the
-        maven build tool, I implemented one-click and no-click processes capable
-        of building, verifying, and deploying the application.
-        The project included implementing a custom Maven plugin.
+    \item Implemented continuous deployment using Jenkins, Maven, and RPM.
 
-    \item
-        Upgrading our development platform from JBoss 5 to JBoss AS 7 in order
-        to take advantage of improved performance, security, and manageability.
-        I was able to leverage the JBoss management API in order to automate installati
-        on, configuration, and deployment of the system.
+    \item Upgraded development platform from JBoss 5 to JBoss AS 7 in order to
+        take advantage of improved performance, security, and manageability.
+        Leveraged the JBoss management API in order to automate installation,
+        configuration, and deployment of the system.
 
-    \item
-        Implementing Single Sign-On using the SAML SSO protocol and the OpenSAML
+    \item Implemented Single Sign-On using the SAML SSO protocol and the OpenSAML
         library
 
 \end{itemize}
@@ -62,65 +61,102 @@ included:
 \cventry{July 2010 -- July 2011}{Software Engineering Associate Manager}{Juniper
 Networks}{}{}{}
 
-Following the acquisition of SMobile Systems by Juniper Networks in July
-2010, I was responsible for managing the integration of server technologies
-and development into existing Juniper Processes.
-This included:
+Managed the integration of SMobile server technologies and development into
+existing Juniper processes, following the acquisition of SMobile Systems by
+Juniper Networks in July 2010.
+
 \begin{itemize}
-    \item
-        Migrating legacy SMobile tools including defect tracking, source control,
-        and release management tools into their Juniper equivalents.
-    \item
-        Training Juniper team members on the use and architecture of SMobile technology.
-    \item
-        Maintaining release cadence so that we could continue to deliver SMobile
-        technology under the new Juniper brand.
+
+    \item Migrated legacy SMobile tools including defect tracking, source
+        control, and release management tools into their Juniper equivalents.
+
+    \item Trained Juniper team members on the use and architecture of SMobile technology.
+
+    \item Maintained release cadence in order to continue delivery of SMobile
+        technology during integration.
+
+    \item Wrote functional specifications for proposed new functionality.
+
 \end{itemize}
 
-\cventry{November 2008 -- July 2010}{Directory of Architecture}{SMobile Systems}{
-}{}{}
-As director of Architecture at SMobile Systems, I was responsible for the
-design and delivery of the company's enterprise management server product.
-In this role, I was able to manage new feature development while migrating
-the system from a legacy PHP implementation to an Enterprise Java implementatio
-n.
+\cventry{November 2008 -- July 2010}{Director of Architecture}{SMobile Systems
+}{Columbus, OH}{}{A security products vendor specializing in smartphone security.
+Acquired by Juniper Networks, July 2010}
+
+Responsible for the design and delivery of the company's enterprise management
+server product.
+
+\begin{itemize}
+
+    \item Managed new feature development while migrating the system from a
+        legacy PHP implementation to an Enterprise Java implementation.
+
+    \item Integrated billing and distribution with third-party vendors.
+
+    \item Simplified product registration eliminating the need for redundant
+        versions of the application.
+
+    \item Wrote technical documentation for internal and external use.
+
+\end{itemize}
 
 \cventry{May 2007 -- November 2008}{.NET Applications Developer}{Exceptional
-Innovation}{}{}{}
+Innovation}{Westerville, OH}{}{}
 
-Extending Life|ware's home automation scripting engine.
-Developing new releases of the Life|ware configuration tool: Visual Project.
-Developing feature enhancements within Life|ware's service oriented architectur
-e.
-\cventry{July 2004 -- May 2007}{Vice President of Engineering}{SMobile Systems}{}
-{}{}
+Extended the Life|ware home automation platform and related tooling.
+
+\begin{itemize}
+    \item Extended Life|ware's home automation scripting engine
+    \item Developed new releases of the Life|ware configuration tool, Visual Project
+    \item Developed feature enhancements within Life|ware's service oriented architecture.
+\end{itemize}
+
+\cventry{July 2004 -- May 2007}{Vice President of Engineering}{SMobile
+Systems}{Columbus, OH} {}{}
+
 Managed the design, implementation, and release of all of SMobile’s software
 products.
-• Lead the implementation of an integrated security product for Series
-60 2nd and 3rd editions through Symbian signing and deployment to a tier
-1 mobile network operator in Europe.
-• Designed a flexible product architecture enabling rapid customization
-for new clients and shifting requirements.
-• Extracted and continuously refined functional specifications from vague
-and sometimes ambiguous business requirements.
-\cventry{July 2004 -- May 2007}{Software Engineer}{SMobile Systems}{}{}{}
-Responsible for the design, implementation, and customer acceptance of all
-SMobile products running on SymbianOS.
-Routinely delivered timely and fully functional releases.
+
 \begin{itemize}
-    \item
 
-        Implemented, maintained, and customized numerous commercial security products
-        including an Anti-Virus, an SMS and call filter, and an encryption tool
-        for all major Symbian platforms.
-    \item
-        Automated build and deployment procedures to ensure project consistency
-        among multiple developers, reducing integration delays by 75%.
-    \item
+    \item Lead the implementation of an integrated security product for Series
+        60 2nd and 3rd editions through Symbian signing and deployment to a tier
+        1 mobile network operator in Europe.
 
-        Applied Object Oriented analysis and design techniques to create class
-        libraries re-used throughout the organization
+    \item Designed a flexible product architecture enabling rapid customization
+        for new clients and shifting requirements.
+
+    \item Extracted and continuously refined functional specifications from vague
+        and sometimes ambiguous business requirements.
+
 \end{itemize}
+
+\cventry{July 2004 -- May 2007}{Software Engineer}{SMobile Systems}{}{}{}
+
+Responsible for the design, implementation, and customer acceptance of all
+SMobile products running on SymbianOS.  Routinely delivered timely and fully
+functional releases.
+
+\begin{itemize}
+
+    \item Implemented, maintained, and customized numerous commercial security
+        products including an Anti-Virus, an SMS and call filter, and an
+        encryption tool for all major Symbian platforms.
+
+    \item Automated build and deployment procedures to ensure project
+        consistency among multiple developers, reducing integration delays by
+        75%.
+
+    \item Applied object-oriented analysis and design techniques to create class
+        libraries re-used throughout the organization.
+
+    \item Supervised offshore development efforts.
+
+\end{itemize}
+
+\section{Education}
+
+\cventry{2000 -- 2004}{B.S. Electrical and Computer Engineering}{The Ohio State University}{Columbus, OH}{GPA 3.13}{}
 
 \end{document}
 
